@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    /* text-decoration: none;
+    list-style: none; */
 }
 
 :root{
@@ -14,38 +14,43 @@
     --Lightgray: hsl(212, 45%, 89%);
     --Grayishblue: hsl(220, 15%, 55%);
     --Darkblue: hsl(218, 44%, 22%);
-    --para: 15px;
+    --para: 0.9rem;
 }
 /* use a variable to call any val. from the root */
 body{
     background-color: var(--Lightgray);
-    max-width: 1440px;
-    min-width: 375px;
+    /* max-width: 1440px;
+    min-width: 375px; */
+    padding: 1rem;
     font-family:"Outfit", "Sans-serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    text-align: center;
 }
-main{
+/* main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 .card{
     background-color: var(--White);
-    width: 260px;
-    height: 400px;
+    max-width: 18.8rem;
     border-radius: 15px 15px 15px 15px;
 }
 .card-image{
-    width: 260px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    display: block;
     padding: 10px 10px 0 10px;
     
 }
 .card-image img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     border-radius: 10px 10px 10px 10px;
-    object-fit: cover;
 }
 .card-body{
     margin-top: 0.2rem;
@@ -56,22 +61,21 @@ main{
     height: 140px;
     padding: 10px 10px 0 10px;;
 }
-.card-body b{
+.card-body h1{
     color: var(--Darkblue);
     font-weight: 700;
-    font-family: "Outfit";
-
+    font-size: 1.3rem;
+    width: 90%;
+    
 }
 .card-body p{
     margin: 0.5rem;
     color: var(--Grayishblue);
-    font-family: "Outfit";
-    font-weight: 400;
-    text-align: center;
-    font-size: 14px;
+    font-size: 0.88rem;
+    width: 85%;
     
 }
-@media (max-width: 675px) and (min-width: 375px){
+/* @media (max-width: 675px) and (min-width: 375px){
    
  .card{
     width: 350px;
@@ -82,14 +86,14 @@ main{
     width: 350px;
     height: 350px;
     padding: 15px 15px 0 15px;
- }
+ } */
  /* .card-image img{
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     object-fit: cover;
 } */
-.card-body{
+/* .card-body{
     height: 200px;
 }
 .card-body b{
@@ -98,4 +102,4 @@ main{
 .card-body p{
     font-size: 18px;  
 }
-}
+} */
